@@ -1,0 +1,8 @@
+what makes  a good plot? best practices and how to avoid bad plots
+Problem				Solution
+data are meaningless		do good science
+misleading smoothing		be judicious with smoothing/have theory to explain smooth
+observations not stated		state observations or show them (boxplot that shows each datapoints)
+plot exists			show simple data with table or text
+visual complexity		simplify
+poor resolution			save plots at display size
