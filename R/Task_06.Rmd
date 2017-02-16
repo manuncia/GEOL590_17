@@ -2,8 +2,7 @@
 #**"Atmospheric Ammonia Removal of Trees"**
 Author: Marife Anunciado
 Date: February 15, 2017
-Output: 
-md_document
+Output: md_document
 
 ## Background
 
