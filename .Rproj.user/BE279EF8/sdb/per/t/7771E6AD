@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "str(diamonds)\nnrow(diamonds) # there are 53940 rows\nset.seed(1410)\ndsmall <- diamonds[sample(nrow(diamonds), 100), ]\nstr(dsmall)\ntask1 <- ggplot(dsmall, aes(x=x, y=y, color=z)) + geom_point(size=1) + facet_wrap(~ dsmall$cut)\nprint(task1)\ntask2 <- ggplot(dsmall, aes(x=carat, y=price, color=cut)) + geom_point(size=1) +geom_smooth(method = lm, se = FALSE)\nprint(task2)\ntask3 <- ggplot(dsmall, aes(x=carat, colour=clarity)) + geom_density() + facet_wrap(~ dsmall$clarity)\nprint(task3)\ntask4 <- ggplot(dsmall, aes(factor(cut), price)) + geom_boxplot()\nprint(task4)\ntask5 <- ggplot(dsmall, mapping = aes(x=x, y=y)) + geom_line(aes(colour=x, group=x)) + geom_point(aes(colour=x), size=3, colour= \"red\") + geom_smooth(colour = \"blue\", linetype= 2) + xlab(\"x, in mm\") +ylab(\"y, in mm\") \nprint(task5)\ntask6 <- ggplot(dsmall, aes(x=density, colour=carat)) + geom_clarity()\nprint(task6)\n",
+    "created" : 1487202860122.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3312052237",
+    "id" : "7771E6AD",
+    "lastKnownWriteTime" : 1487191844,
+    "last_content_update" : 1487191844,
+    "path" : "C:/Users/marifeanunciado/Desktop/GEOL590/HW4/task04.R",
+    "project_path" : null,
+    "properties" : {
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

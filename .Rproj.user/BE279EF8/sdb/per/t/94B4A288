@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "\nx <- seq(from=1, to=20, length.out=10)\ny <- rnorm(10)\nlabels <- letters[10]\nd <- data.frame(x, y, labels)\npng(\"test_plot.png\", height=3, width=4, units=\"in\", res=300)\nplot(x, y)\ndev.off()\nwrite.csv(\"test_data.csv\")\nmy.variable <- (2+2)\n",
+    "created" : 1487214282029.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3631711382",
+    "id" : "94B4A288",
+    "lastKnownWriteTime" : 1484602049,
+    "last_content_update" : 1484602049,
+    "path" : "C:/Users/marifeanunciado/Desktop/GEOL590/HW2/HW2.R",
+    "project_path" : null,
+    "properties" : {
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

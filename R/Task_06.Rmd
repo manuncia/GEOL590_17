@@ -24,6 +24,12 @@ Six different plant species were exposed to three levels of $NH_3$ (1, 5, 10 par
 ammonia <- read.csv ("test_data.csv")
 summary(ammonia)
 ```
+
+```{r}
+getwd()
+ammonia <-read.csv("test_data.csv")
+```
+
 ```{r echo=FALSE} 
 library(ggplot2)
 data_ammonia <- ggplot(ammonia, aes(ammonia$Levels, ammonia$Pre.Photoynthesis)) + geom_jitter(stat = "identity", color=ammonia$Levels) + facet_grid(~ ammonia$Species) + xlab("Ammonia Concentration, ppm") + ylab("Net Photosynthesis, umol") + theme_dark()
