@@ -1,9 +1,0 @@
-"0","getwd()"
-"1","[1]"
-"1"," ""C:/Users/marifeanunciado/Desktop/GEOL590_2017/R/R"""
-"1","
-"
-"0","ammonia <- read.csv(""test_data.csv"")"
-"2","cannot open file 'test_data.csv': No such file or directory"
-"2","Error in file(file, ""rt"") : cannot open the connection
-"
