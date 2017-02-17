@@ -1,10 +1,10 @@
 ---
-#**"Atmospheric Ammonia Removal of Trees"**
-Author: Marife Anunciado
-Date: February 15, 2017
+Author: "Marife Anunciado"
+Date: February 15,2017
 Output: github_document
 ---
 
+#**"Atmospheric Ammonia Removal of Trees"**
 ## Background
 
 Six different plant species were exposed to three levels of $NH_3$ (1, 5, 10 parts per million) in a laboratory-controlled setup. Physiological response on net photosynthetic rate was measured before and immediately after the exposure period. 
@@ -30,7 +30,6 @@ summary(ammonia)
 library(ggplot2)
 data_ammonia <- ggplot(ammonia, aes(ammonia$Levels, ammonia$Pre.Photoynthesis)) + geom_jitter(stat = "identity", color=ammonia$Levels) + facet_grid(~ ammonia$Species) + xlab("Ammonia Concentration, ppm") + ylab("Net Photosynthesis, umol") + theme_dark()
 print(data_ammonia)
-ggsave("data_ammonia.png")
 ```
 
 ## Discussion
