@@ -1,7 +1,9 @@
-
+---
 #**"Atmospheric Ammonia Removal of Trees"**
 Author: Marife Anunciado
 Date: February 15, 2017
+Output: github_document
+---
 
 ## Background
 
@@ -43,7 +45,7 @@ Yaupon and American holly still responded the same as it was in the low treatmen
 
 **High Treatment**
 
-Most plant species were observed to have lower photosynthetic values except for Yaupon and Arizona cypress. Yaupon’s photosynthetic value before exposure at low and medium treatment level remained lower than after exposure. Arizona cypress has its photosynthetic rate lower after exposure at medium level, but shown to increase again at higher concentration of ammonia. All other three species have lower photosynthetic values measured. 
+Most plant species were observed to have lower photosynthetic values except for Yaupon and Arizona cypress. Yaupon's photosynthetic value before exposure at low and medium treatment level remained lower than after exposure. Arizona cypress has its photosynthetic rate lower after exposure at medium level, but shown to increase again at higher concentration of ammonia. All other three species have lower photosynthetic values measured. 
 
 
 ## Conclusion
