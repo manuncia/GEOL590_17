@@ -25,16 +25,16 @@ Outliers in wind speed was rejected through a function **filter**, in this case 
     ## 10    EWR       10 12.65858
     ## # ... with 2,009 more rows
 
-![](Task_7_files/figure-markdown_github/unnamed-chunk-2-1.png)
+![](Task_7_files/figure-markdown_github/airports-1.png)
 
 Wind direction of **220 at EWR**; **200 at JFK** and **180 at LGA** airports has the highest median. Each airport's wind speed over wind direction was specifically shown as follows:
 
-![](Task_7_files/figure-markdown_github/unnamed-chunk-3-1.png)![](Task_7_files/figure-markdown_github/unnamed-chunk-3-2.png)![](Task_7_files/figure-markdown_github/unnamed-chunk-3-3.png)
+![](Task_7_files/figure-markdown_github/=median%20distance-1.png)![](Task_7_files/figure-markdown_github/=median%20distance-2.png)![](Task_7_files/figure-markdown_github/=median%20distance-3.png)
 
 Using nycflights13::flights and nycflights13::airlines: airlines and its median distance (longest to shortest distance) travelled originating from JFK airport was displayed.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-![](Task_7_files/figure-markdown_github/unnamed-chunk-4-1.png)
+![](Task_7_files/figure-markdown_github/=JFK%20data-1.png)
 
 The plot below shows the wide-format data frame of number of flights originating from EWR airport at each month from each airlines.
 -----------------------------------------------------------------------------------------------------------------------------------
@@ -59,7 +59,7 @@ The plot below shows the wide-format data frame of number of flights originating
 The ten most common male and female names and their popularity from 1880 to 2014 were shown in the plots below:
 ---------------------------------------------------------------------------------------------------------------
 
-![](Task_7_files/figure-markdown_github/unnamed-chunk-6-1.png)![](Task_7_files/figure-markdown_github/unnamed-chunk-6-2.png)
+![](Task_7_files/figure-markdown_github/=babynames-1.png)![](Task_7_files/figure-markdown_github/=babynames-2.png)
 
 The most popular names in 1896, 1942 and 2014 was shown below as well as their proportion.
 
@@ -86,4 +86,4 @@ Using nasaweather datasets on storms
 3.  look at the weather disturbance that occurred in 1995
 4.  determine the months with weather disturbances
 
-![](Task_7_files/figure-markdown_github/unnamed-chunk-8-1.png)![](Task_7_files/figure-markdown_github/unnamed-chunk-8-2.png)![](Task_7_files/figure-markdown_github/unnamed-chunk-8-3.png)
+![](Task_7_files/figure-markdown_github/=%20owntask-1.png)![](Task_7_files/figure-markdown_github/=%20owntask-2.png)![](Task_7_files/figure-markdown_github/=%20owntask-3.png)
