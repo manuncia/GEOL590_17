@@ -2,7 +2,8 @@
 title: "Task 7"
 author: "Marife Anunciado"
 date: "March 3, 2017"
-output: html_document
+output: 
+  github_document: default
 ---
 ```{r include=FALSE}
 library(dplyr)
