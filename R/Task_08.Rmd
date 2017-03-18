@@ -1,0 +1,53 @@
+---
+title: "Task 8"
+output: 
+  github_document: default
+---
+### The following code takes the values from "two" selected columns and adds it together into a new column and can be renamed as specified by the "user".
+A dataset "test_pre" was tested for the function and generated a warning that states the data not in dataframe format. 
+
+```{r}
+library(dplyr)
+library(lazyeval)
+test_data <- read.csv("test_data.csv")
+str(test_data)
+col1_col2 <- function(df, list_of_cols, new_col) 
+  { 
+   if(is.data.frame(df)!= TRUE)
+    warning("not a data frame")
+  df %>% 
+  mutate_(.dots = ~Reduce(`+`, .[list_of_cols])) %>% 
+  setNames(c(names(df), new_col))
+  }
+
+head(col1_col2(test_data, c("Pre.Photosynthesis", "Post.Photosynthesis"), "Final_Photosynthesis"))
+```
+
+### The function uses a for loop and a package microbenchmark to calculate the sum of the elements "your_fun" vector, that returned 50005000 values.
+
+#### For Loop
+##### Takes the summary of all the squared values in loop_test_comparison
+
+```{r}
+library(microbenchmark)
+# takes the summary of all the squared values in loop_test_comparison
+loop_test_comparison <- c(1:10^4)
+your_fun <- function (loop_test_comparison) 
+  {for(val in loop_test_comparison)
+  sums <- sum(loop_test_comparison) 
+  sum
+  print(sums)
+  }
+# takes the summary of all squared values for each rows because of "for loop"
+your_fun(1:10^4)
+test.vec <- 1:10^4
+microbenchmark(your_fun(test.vec), sum(test.vec)) #your_fun takes longer because the for loop 
+```
+`
+##### Takes the summary of all squared values for each rows because of "for loop"
+```{r} 
+your_fun(1:10^4)
+test.vec <- 1:10^4
+microbenchmark(your_fun(test.vec), sum(test.vec)) 
+```
+### In general, #your_fun takes longer because for the for loop option.
