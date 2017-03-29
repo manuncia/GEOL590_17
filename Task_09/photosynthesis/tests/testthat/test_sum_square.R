@@ -1,0 +1,6 @@
+library(devtools)
+library(testthat)
+library(photosynthesis)
+expect_equal(value_square(2), 4)
+expect_equal(value_square(3), 9)
+expect_equal(value_square(4), 16)

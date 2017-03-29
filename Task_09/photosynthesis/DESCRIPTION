@@ -1,0 +1,14 @@
+Package: photosynthesis
+Title: Square values for photosynthesis rate
+Version: 0.0.0.9000
+Author: Marife Anunciado, email=manuncia@vols.utk.edu, role = c("aut", "cre"))
+Description: Calculates the square of each photosynthesis value.
+Depends: R (>= 3.3.3)
+License: CC0
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1
+Suggests: knitr,
+    rmarkdown,
+    testthat
+VignetteBuilder: knitr
