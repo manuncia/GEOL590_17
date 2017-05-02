@@ -26,12 +26,12 @@ Six different plant species were exposed to three levels of $NH_3$ (1, 5, 10 par
  *  Yaupon
  
  An infra-red gas analyzer was used. Pre-photosynthesis signifies net assimilation of $CO_2$ **before exposure** to ammonia and post-photosynthesis tells the $CO_2$ **after the exposure**. The measurement were as follows:
-```{r Test_data_value, echo=TRUE}
+```{r}
 ammonia <-read.csv("test_data.csv")
 summary(ammonia)
 ```
 
-```{r Test_data_plot, echo=TRUE}
+```{r} 
 library(ggplot2)
 data_ammonia <- ggplot(ammonia, aes(ammonia$Levels,ammonia$Pre.Photosynthesis)) + geom_jitter(stat = "identity", color= ammonia$Levels) + facet_grid(~ ammonia$Species) + xlab("Ammonia Concentration, ppm") + ylab("Net Photosynthesis, umol") + theme_dark()
 print(data_ammonia)
