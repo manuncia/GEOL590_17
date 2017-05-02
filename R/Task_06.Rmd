@@ -1,12 +1,13 @@
 ---
 Author: "Marife Anunciado"
 Date: February 15,2017
-Output: 
-  github_document: default
+Output: md_document
 ---
 
-```{r}
+```{r setup, include=FALSE}
+#github_document: default
 knitr::opts_chunk$set(echo = TRUE)
+
 ```
 
 #**"Atmospheric Ammonia Removal of Trees"**
