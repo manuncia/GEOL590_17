@@ -1,9 +1,15 @@
+---
+Author: "Marife Anunciado"
+Date: February 15,2017
+Output: 
+  github_document: default
+---
+
+```{r}
+knitr::opts_chunk$set(echo = TRUE)
+```
 
 #**"Atmospheric Ammonia Removal of Trees"**
-Author: Marife Anunciado
-Date: February 15, 2017
-Output: md_document
-
 ## Background
 
 Six different plant species were exposed to three levels of $NH_3$ (1, 5, 10 parts per million) in a laboratory-controlled setup. Physiological response on net photosynthetic rate was measured before and immediately after the exposure period. 
@@ -20,15 +26,15 @@ Six different plant species were exposed to three levels of $NH_3$ (1, 5, 10 par
  *  Yaupon
  
  An infra-red gas analyzer was used. Pre-photosynthesis signifies net assimilation of $CO_2$ **before exposure** to ammonia and post-photosynthesis tells the $CO_2$ **after the exposure**. The measurement were as follows:
-```{r echo=FALSE}
-ammonia <- read.csv ("test_data.csv")
+```{r}
+ammonia <-read.csv("test_data.csv")
 summary(ammonia)
 ```
-```{r echo=FALSE} 
+
+```{r} 
 library(ggplot2)
-data_ammonia <- ggplot(ammonia, aes(ammonia$Levels, ammonia$Pre.Photoynthesis)) + geom_jitter(stat = "identity", color=ammonia$Levels) + facet_grid(~ ammonia$Species) + xlab("Ammonia Concentration, ppm") + ylab("Net Photosynthesis, umol") + theme_dark()
+data_ammonia <- ggplot(ammonia, aes(ammonia$Levels,ammonia$Pre.Photosynthesis)) + geom_jitter(stat = "identity", color= ammonia$Levels) + facet_grid(~ ammonia$Species) + xlab("Ammonia Concentration, ppm") + ylab("Net Photosynthesis, umol") + theme_dark()
 print(data_ammonia)
-ggsave("data_ammonia.png")
 ```
 
 ## Discussion
@@ -43,7 +49,7 @@ Yaupon and American holly still responded the same as it was in the low treatmen
 
 **High Treatment**
 
-Most plant species were observed to have lower photosynthetic values except for Yaupon and Arizona cypress. Yaupon’s photosynthetic value before exposure at low and medium treatment level remained lower than after exposure. Arizona cypress has its photosynthetic rate lower after exposure at medium level, but shown to increase again at higher concentration of ammonia. All other three species have lower photosynthetic values measured. 
+Most plant species were observed to have lower photosynthetic values except for Yaupon and Arizona cypress. Yaupon's photosynthetic value before exposure at low and medium treatment level remained lower than after exposure. Arizona cypress has its photosynthetic rate lower after exposure at medium level, but shown to increase again at higher concentration of ammonia. All other three species have lower photosynthetic values measured. 
 
 
 ## Conclusion
