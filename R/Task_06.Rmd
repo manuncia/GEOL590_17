@@ -5,6 +5,10 @@ Output:
   github_document: default
 ---
 
+```{r}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
 #**"Atmospheric Ammonia Removal of Trees"**
 ## Background
 
